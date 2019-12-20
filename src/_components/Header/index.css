@@ -10,3 +10,9 @@
   font-weight: 500;
   padding-right: 1.6rem;
 }
+
+@media screen and (max-width: 800px) {
+  .Header {
+    justify-content: space-between;
+  }
+}

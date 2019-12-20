@@ -7,12 +7,11 @@ const TITLE = 'Marco D\'Andolfi';
 
 const App: React.FC = () => {
   const [active, setActive] = useState(LINKS[0]);
-  const opened = LINKS.indexOf(active);
   return (
     <div className="App">
         <Header
           links={LINKS}
-          opened={opened}
+          openedLink={active}
           setActive={setActive}
           title={TITLE}
         />

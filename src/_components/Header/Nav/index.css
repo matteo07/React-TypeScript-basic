@@ -4,3 +4,50 @@
   margin: 0;
   padding: 0;
 }
+
+.Nav .Link {
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.Nav > .menu {
+  display: none;;
+}
+
+#popup {
+  align-items: center;
+  background-color: rgba(256, 256, 256, 0.9);
+  cursor: pointer;
+  display: none;
+  height: 100vh;
+  left: 0;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+}
+
+#popup > div {
+  cursor: default;
+  padding: 1rem 2rem 4rem;
+}
+
+#popup .Link {
+  padding: 0.8rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .Nav > .Link {
+    display: none;
+  }
+
+  .Nav > .menu {
+    display: block;
+  }
+
+  #popup {
+    display: flex;
+  }
+}
