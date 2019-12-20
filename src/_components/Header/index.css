@@ -1,0 +1,9 @@
+.Header {
+  margin: 0;
+  padding: 0;
+}
+
+.Header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}

@@ -1,0 +1,8 @@
+.App {
+  padding: 32px;
+}
+
+.App * {
+  margin: 0;
+  padding: 0;
+}
