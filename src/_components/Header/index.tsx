@@ -1,14 +1,20 @@
 import React from 'react';
 import './index.css';
+import Nav from '../Nav';
 
 interface Props {
-  title?: string
+  links: Array<string>,
+  opened: number,
+  setActive: (link: string) => void,
+  title?: string,
 }
 
-const Header: React.FC<Props> = ({ title }) => {
+
+const Header: React.FC<Props> = ({ links, opened, setActive, title }) => {
   return (
     <div className="Header">
-      <h2>Title</h2>
+      <h2>{title}</h2>
+      <Nav links={links} opened={opened} setActive={setActive} />
     </div>
   );
 };
