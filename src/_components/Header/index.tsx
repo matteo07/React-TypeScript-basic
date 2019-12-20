@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import Nav from '../Nav';
+import Nav from './Nav';
 
 interface Props {
   links: Array<string>,
@@ -13,7 +13,7 @@ interface Props {
 const Header: React.FC<Props> = ({ links, opened, setActive, title }) => {
   return (
     <div className="Header">
-      <h2>{title}</h2>
+      <h1>{title}</h1>
       <Nav links={links} opened={opened} setActive={setActive} />
     </div>
   );

@@ -3,7 +3,7 @@ import './App.css';
 import Header from './_components/Header/';
 
 const LINKS = ['commercial', 'stories', 'graphic', 'info'];
-const TITLE = 'Marco D\'andolfi';
+const TITLE = 'Marco D\'Andolfi';
 
 const App: React.FC = () => {
   const [active, setActive] = useState(LINKS[0]);

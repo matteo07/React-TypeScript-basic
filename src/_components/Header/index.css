@@ -5,8 +5,8 @@
   padding: 0;
 }
 
-.Header h2 {
-  font-size: 18px;
-  font-weight: 600;
-  padding-right: 8px;
+.Header h1 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-right: 1.6rem;
 }
